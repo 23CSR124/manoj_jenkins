@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Outstanding Theme</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0b0f1a;
+      --card: rgba(255, 255, 255, 0.08);
+      --text: #eaeaf0;
+      --muted: #a0a3b1;
+      --accent: linear-gradient(135deg, #7f7cff, #00ffd5);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #141a33, var(--bg));
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero {
+      max-width: 900px;
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      background: var(--card);
+      backdrop-filter: blur(10px);
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      background: var(--accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .buttons {
+      margin-top: 2.5rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.9rem 1.6rem;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #000;
+      background: var(--accent);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(0, 255, 213, 0.25);
+    }
+
+    section {
+      padding: 6rem 8vw;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--card);
+      backdrop-filter: blur(14px);
+      border-radius: 20px;
+      padding: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+      <div class="badge">✨ Outstanding Modern Theme</div>
+      <h1>Design That Feels<br />Ahead of Its Time</h1>
+      <p>
+        A clean, futuristic UI with glassmorphism, smooth motion, and bold gradients.
+        Perfect for portfolios, startups, or landing pages.
+      </p>
+      <div class="buttons">
+        <button class="btn">Get Started</button>
+        <button class="btn secondary">Learn More</button>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="grid">
+      <div class="card">
+        <h3>🚀 Performance</h3>
+        <p>Lightweight, fast-loading, and optimized for modern browsers.</p>
+      </div>
+      <div class="card">
+        <h3>🎨 Visual Polish</h3>
+        <p>Gradients, blur effects, and subtle animations for premium feel.</p>
+      </div>
+      <div class="card">
+        <h3>📱 Responsive</h3>
+        <p>Looks stunning on desktop, tablet, and mobile devices.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 • Crafted with style and intention
+  </footer>
+
+</body>
+</html>
